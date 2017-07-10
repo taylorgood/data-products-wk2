@@ -1,7 +1,6 @@
 ---
 title: "Week 2 Map"
 author: "T. G."
-date: "July 10, 2017"
 output: html_document
 ---
 
