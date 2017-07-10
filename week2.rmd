@@ -1,0 +1,35 @@
+---
+title: "Week 2 Map"
+author: "T. G."
+date: "July 10, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE)
+```
+
+```{r libraries}
+require(leaflet)
+
+
+```
+
+# Date: 7/8/2017
+
+```{r}
+library(leaflet)
+
+twoChinas <- data.frame(
+  lat=c(39.9102, 25.034107),
+  lng = c(116.3864, 121.513919),
+  popup = c("Residence of President Xi, leader of the People's Republic of China", "Residence of President Tsai, leader of the Republic of China")
+  )
+
+twoChinas %>% 
+  leaflet() %>%
+  addTiles() %>%
+  addMarkers()
+
+
+```
